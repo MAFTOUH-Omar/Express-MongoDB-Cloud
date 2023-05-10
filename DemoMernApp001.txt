@@ -1,0 +1,58 @@
+*API : un clé pour utilise plusieur fonctionaliter d'une application exist
+	--Example : (Transfer data , Suppression data ,...)
+*REST : Style Architecture logicielle Rest=(Service web) 
+*Les méthodes HTTP : (GET , HEAD='Entete' , POST ='Envoyer data',PUT='Update' , Delete)
+	--{HEAD : por gérer le type de retourne de GET}
+*HTTP Status Codes : 
+	--(100-199) = Information responses
+	--(200-299) = Successful responses
+	--(300-399) = Redirects
+	--(400-499) = Client errors
+	--(500-599) = And Server errors
+//developer.mozilla.org/en-US/docs/Web/HTTP/Status
+--------------------------------------------------------------|
+--------------------------------------------------------------|
+*Creation d'un RestApi : 
+1) Installation nodejs 
+	--{pour verifier =>cmd=>node --version && npm --version}
+2) Creation d'un 'clusters' dans un cloud de mongoDB 
+	--cloud.mongodb.com //Link
+3) initialisation de projet 
+	--Dossier=>VsCode=>terminal=>
+		a)npm init (pour installer package.json , node_module)
+		b)npm i body-parser express mongoose -s
+		c)npm i -D nodemon => 
+package.json :     
+	{
+  "name": "mernapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    //"start" : "nodemon index.js"//Ana li ktabto
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1",
+    "nodemon": "^2.0.20"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
